@@ -1,5 +1,5 @@
 {
-  "name": "sudden-death",
+  "name": "atom-sudden-death",
   "main": "./lib/sudden-death",
   "version": "1.0.1",
   "description": "Convert selected text to an ascii art of sudden death (aka totsuzen-no-shi)",
