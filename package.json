@@ -1,12 +1,12 @@
 {
-  "name": "sudden-death",
-  "main": "./lib/sudden-death",
+  "name": "sudden-death-generator",
+  "main": "./lib/sudden-death-generator",
   "version": "1.0.0",
   "description": "Convert selected text to an ascii art of sudden death (aka totsuzen-no-shi)",
   "activationEvents": [
-    "sudden-death:convert"
+    "sudden-death-generator:generate"
   ],
-  "repository": "https://github.com/oinume/atom-sudden-death",
+  "repository": "https://github.com/oinume/atom-sudden-death-generator",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"

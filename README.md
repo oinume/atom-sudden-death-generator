@@ -1,4 +1,4 @@
-# sudden-death package
+# sudden-death-generator package
 
 Convert selected text to an ascii art of sudden death (aka totsuzen-no-shi).
 

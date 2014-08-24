@@ -1,8 +1,8 @@
 module.exports =
   activate: ->
-    atom.workspaceView.command "sudden-death:convert", => @convert()
+    atom.workspaceView.command "sudden-death-generator:generate", => @generate()
 
-  convert: ->
+  generate: ->
     # This assumes the active pane item is an editor
     editor = atom.workspace.activePaneItem
     selection = editor.getSelection()
@@ -16,15 +16,15 @@ module.exports =
     #console.log("str = " + str)
     #console.log("byteLength() = %d", @byteLength(str))
     length = Math.floor(@byteLength(str) / 2);
-    #converted = "＿#{@repeat('人', length + 2)}＿\n" + "＞　#{str}　＜\n" + "￣^#{@repeat('Y^', length)}￣"
-    converted = """
+    #generateed = "＿#{@repeat('人', length + 2)}＿\n" + "＞　#{str}　＜\n" + "￣^#{@repeat('Y^', length)}￣"
+    generated = """
 ＿#{@repeat('人', length + 2)}＿
 ＞　#{str}　＜
 ￣^#{@repeat('Y^', length)}￣
     """
-    converted = converted.replace(/(^\s+)|(\s+$)/g, "");
-    #console.log("--- converted ---\n%s", converted)
-    selection.insertText(converted)
+    generated = generated.replace(/(^\s+)|(\s+$)/g, "");
+    #console.log("--- generated ---\n%s", generated)
+    selection.insertText(generated)
 
   byteLength: (str) ->
     len = 0

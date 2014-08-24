@@ -1,5 +1,5 @@
 {WorkspaceView} = require 'atom'
-AsciiArt = require '../lib/sudden-death'
+AsciiArt = require '../lib/sudden-death-generator'
 
 # Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 #
@@ -11,11 +11,11 @@ describe "SuddenDeath", ->
   beforeEach ->
     atom.workspaceView = new WorkspaceView()
     atom.workspace = atom.workspaceView.model
-    promise = atom.packages.activatePackage('sudden-death')
+    promise = atom.packages.activatePackage('sudden-death-generator')
     waitsForPromise ->
       atom.workspace.open()
 
   it "convert", ->
-    atom.workspaceView.trigger 'sudden-death:convert'
+    atom.workspaceView.trigger 'sudden-death-generator:generate'
     waitsForPromise ->
       promise
