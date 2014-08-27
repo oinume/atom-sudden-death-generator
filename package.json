@@ -1,7 +1,7 @@
 {
   "name": "sudden-death-generator",
   "main": "./lib/sudden-death-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Convert selected text to an ascii art of sudden death (aka totsuzen-no-shi)",
   "activationEvents": [
     "sudden-death-generator:generate"
