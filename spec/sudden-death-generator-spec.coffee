@@ -15,7 +15,7 @@ describe "SuddenDeath", ->
     waitsForPromise ->
       atom.workspace.open()
 
-  it "convert", ->
+  it "generate", ->
     atom.workspaceView.trigger 'sudden-death-generator:generate'
     waitsForPromise ->
       promise
