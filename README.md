@@ -4,4 +4,4 @@ https://atom.io/packages/sudden-death-generator
 
 Convert selected text to an ascii art of sudden death (aka totsuzen-no-shi).
 
-![A screenshot of your spankin' package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![A screenshot of sudden-death-generator package](https://raw.githubusercontent.com/oinume/atom-sudden-death-generator/master/atom-sudden-death-generator.gif)
